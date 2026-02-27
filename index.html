@@ -2,15 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
 
-    <!--JavaScript External-->
-    <script src="js/script.js"></script>
+<body class="font-sans bg-gray-50">
+
+<!-- HEADER -->
+<header class="flex items-center justify-between px-8 py-4 bg-pink-300 shadow-md">
+
+    <!-- Logo + Nama -->
+    <div class="flex items-center space-x-3">
+        <img src="logo3.jpeg" 
+             alt="Velaris Tech" 
+             class="w-12 h-12 object-cover rounded-full border-2 border-white shadow-sm">
+        <span class="text-white text-xl font-bold tracking-wide">
+            Velaris Tech
+        </span>
+    </div>
+    <nav class="space-x-2">
+        <a class="border px-3 py-2 rounded hover:bg-white hover:text-pink-500 transition" href="#home">Home</a>
+        <a class="border px-3 py-2 rounded hover:bg-white hover:text-pink-500 transition" href="#profile">Our Profile</a>
+        <a class="border px-3 py-2 rounded hover:bg-white hover:text-pink-500 transition" href="#portfolio">Portfolio</a>
+        <a class="border px-3 py-2 rounded hover:bg-white hover:text-pink-500 transition" href="#contact">Message Us</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-pink-100">
+    <h2 class="text-3xl font-bold mb-4">Welcome to Our Website 👋</h2>
+    <p class="max-w-xl">
+        We are glad to have you here. Explore our services and discover how we can help grow your business.
+    </p>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-3xl font-bold mb-4 text-pink-500">About Velaris Tech</h2>
+    <p class="max-w-2xl">
+        Velaris Tech is a creative digital brand delivering high-quality web development, modern design, 
+        and innovative digital solutions to help businesses build a strong online presence.
+    </p>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded shadow">
+            <h3 class="font-bold mb-2">Our Vision</h3>
+            <p>To become a trusted and leading digital solution company in Indonesia, empowering brands through technology and creativity.</p>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+            <h3 class="font-bold mb-2">Our Mission</h3>
+            <p>To deliver high-quality, innovative, and user-friendly digital solutions that help businesses grow.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="min-h-screen px-6 py-16 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center text-pink-500 mb-10">Our Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded shadow hover:scale-105 transition">
+            <h3 class="font-bold">Website Project</h3>
+            <p class="text-sm">Modern responsive website design.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow hover:scale-105 transition">
+            <h3 class="font-bold">Mobile App</h3>
+            <p class="text-sm">User-friendly mobile application.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow hover:scale-105 transition">
+            <h3 class="font-bold">Branding Design</h3>
+            <p class="text-sm">Creative branding and logo design.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="min-h-screen px-6 py-16">
+    <h2 class="text-3xl font-bold text-center text-pink-500 mb-6">Message Us</h2>
+
+    <form class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+        <div class="mb-4">
+            <label class="block mb-2">Name</label>
+            <input class="w-full p-2 border rounded" type="text" required>
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-2">Email</label>
+            <input class="w-full p-2 border rounded" type="email" required>
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-2">Message</label>
+            <textarea class="w-full p-2 border rounded" rows="4" required></textarea>
+        </div>
+
+        <button class="w-full bg-pink-500 text-white py-2 rounded hover:bg-pink-600 transition">
+            Send Message
+        </button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-pink-300 text-center p-4 text-white">
+    © 2026 Velaris Tech. All rights reserved.
+</footer>
+
 </body>
 </html>
